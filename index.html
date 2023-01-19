@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelAgency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-subtle">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Right Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Left Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Right Post</a></li>
+                            <li><a class="dropdown-item" href="#">Left Post</a></li>
+                            <li><a class="dropdown-item" href="#">Full Post</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    
+    <!-- Sider -->
+
+    <div class="container-fluid" id="bgimg">
+
+        <div class="container" id="slider">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+              
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner" id="cip">
+                  <div class="carousel-item active">
+                    <h1> Welcome to our</h1><br>
+                    <h2> TRAVEL AGENCY</h2><br>
+                    <h4> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h4>
+                  </div>
+                  <div class="carousel-item">
+                    <h1 >12 - Day Cruises</h1>
+                    <h2 > FROM GREECE TO SPAIN</h2>
+                    <h4> MEDITERRANEAN - 12 - Day Cruises By "GRAND VICTORIA III" Cruise Liner.</h4>
+                  </div>
+                  <div class="carousel-item">
+                    <h1>7 - Day Tour</h1>
+                    <h2>AMAZING CARIBBEAN</h2>
+                    <h4>Lorem ipsum dolor eleifend option congue nihil imperdiet doming id quod.</h4>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Flight</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" aria-current="page" href="#">Hotel </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cruises</a>
+                </li>
+              </ul>
+                  <div class="container pt-5">
+                  <div id="row">
+                    <span class="h6" style="color:#ccc ;">Flight from:</span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+
+                    <span class="h6" style="color:#ccc ;">To:</span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                    <span class="h6" style="color:#ccc ;">Departing:</span>
+                    <form class="form2">
+                        <input type="date" id="birthday" name="birthday">
+                        </form>
+                        <span class="h6" style="color:#ccc ;">Returning:</span>
+                        <form class="form2">
+                            <input type="date" id="birthday" name="birthday">
+                            </form>
+
+                            <span class="h6" style="color:#ccc ;">Adult:</span>
+                        <form class="form2">
+                            <input type="number" id="birth" name="birthday">
+                            </form>
+
+                            <span class="h6" style="color:#ccc ;">Child:</span>
+                            <form class="form2">
+                                <input type="number" id="birth" name="birthday">
+                                </form>
+                                <button class="normal2">SEARCH</button>
+                  </div>
+                </div>
+                
+        </div>
+
+    </div>
+      
+    <div class="content">
+        <h2>WHY WE ARE THE BEST</h2>
+        <p class="content-part">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod<br>
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <section id="features">
+        <div class="container features-item">
+            <div class="row">
+            <div class="col-lg-3">
+                <div class="shapes">
+                    <i class="fa-solid fa-plane fa-4x"></i>
+                    <h4>Amazing Travel</h4>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat.</p>
+            </div>
+            <div class="col-lg-3">
+                <div class="shapes">
+                    <i class="fa-brands fa-discord fa-4x"></i>
+                    <h4>Discover</h4>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat.</p>
+            </div>
+            <div class="col-lg-3">
+                <div class="shapes">
+                    <i class="fa-regular fa-flag fa-4x"></i>
+                    <h4>Book Your Trip</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat.</p>
+            </div>
+            <div class="col-lg-3">
+                <div class="shapes">
+                    <i class="fa-brands fa-rocketchat fa-4x"></i>
+                    <h4>Nice Support</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+       <h1>Caucasus Vacation Packages</h1>
+       <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</span>
+        <button class="normal">DETAILS</button>
+    </section>
+
+    
+    <section id="product1" class="section-p1">
+        <h1>POPULAR CRUISES</h1>  
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>  
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./images/ship1.jpg" alt="">
+                <div class="des">
+                     <h2> Bahamas</h2>
+                     <span>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.</span>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <button>SEE ALL</button>
+                </div>
+                
+            </div>
+            <div class="pro">
+                <img src="./images/ship2.jpg" alt="">
+                <div class="des">
+                    
+                    <h2>Greece</h2>
+                    <span>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.</span>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <button>SEE ALL</button>
+                </div>
+                
+            </div>
+            <div class="pro">
+                <img src="./images/ship3.jpg" alt="">
+                <div class="des">
+                    
+                    <h2>Mediterranean</h2>
+                    <span>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.</span>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <button>SEE ALL</button>
+                </div>
+                
+            </div>
+           
+        </div>
+        </section>
+
+        <section id="people">
+            <div class="box1">
+                <img src="people1.png" alt="">
+            </div>
+            <div class="boxx">
+            <h1>HAPPY CUSTOMERS</h1>
+            <p><b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, set amet.</b></p><br>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh oui- sod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit dolore magna aliquam erat voutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit..</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+        </div>        
+        </section>
+
+        <section id="partner">
+            
+            <img src="partner1.jpg" alt="" >
+            <img src="partner2.jpg" alt="">
+            <img src="partner3.jpg" alt="">
+            <img src="partner4.jpg" alt="">
+            <img src="partner5.jpg" alt="">
+            <img src="partner6.jpg" alt="">
+        
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="images/logo.png" alt="">
+               <p>Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="col">
+                <h2>Travel Specialists</h2>
+                <a href="#">First Class Flights</a>
+                <a href="#">Accessible Travel</a>
+                <a href="#">Amazing Cruises</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col">
+                <h2>Our Twitter</h2>
+                <a href="#">@travel Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                   <br> 5 minutes ago</a>
+                <a href="#">@leo Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim.
+                    <br> 2 days ago</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store Or Google Play</p>
+                <div class="row">
+                    <img src="app.jpg" alt="">
+                    <img src="play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="pay.png" alt="">
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Submit</button>
+                </div>
+                <h1>1-917-338-6831</h1>
+            </div> 
+           
+
+            <div class="copyright">
+                <p>Copyright © 2017 MECOVACHE | Privacy Policy | About Us | FAQ | Contact Support</p>
+            </div>
+        </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
